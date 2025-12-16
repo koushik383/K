@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ankit Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51b199799f.js" crossorigin="anonymous"></script> <!--For icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<body>
+
+    <!------- Home Page ------->
+    <!-- page loader -->
+    <div id="center">
+        <div class="ring"> </div>
+        <span>Loading...</span>
+    </div>
+    <script>
+        var loader = document.getElementById("center");
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+    </script>
+
+
+
+    <header id="header"> <!-- NAVBAR -->
+        <div class="container">
+            <nav>
+                <p class="logo">
+                    <span>A</span>nkit <span>G</span>upta
+                </p>
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Certificates">Certificates</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <div class="theme">
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <div class="header-text">
+        <div class="mpic"></div>
+        <p>Web Developer</p>
+        <h1>HI.. i am &nbsp; <span data-text=" Durga Sai Koushik Matta">Durga Sai Koushik Matta</span><br>From Ongole, Andhra Pradesh</h1>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/durga-sai-koushik-matta-753883281/" target="_blank"><i class="fa-solid fa-bug"></i></a>
+            <a href="https://github.com/koushik383/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="Koushik_Resume.jpeg" target="_blank" download class="btn btn2 "><i
+                class="fa-solid fa-download"></i> Download CV</a>
+    </div>
+
+
+    <!------- About Section ------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1"> <!------For About Image ------->
+                    <img src="koushik profile.jpeg" alt="about image ">
+                </div>
+
+                <div class="about-col-2"> <!-----About text------>
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>
+                        Welcome to my portfolio! I'm a dedicated technology enthusiast with a relentless drive to
+                        deliver 100% efficiency in every project I undertake. My journey in the tech world is fueled by
+                        a passion for continual learning and a commitment to staying ahead in this ever-evolving field.
+                        <br><br>
+                        📊
+                        I prioritize continual learning and update my skills daily. My ability to quickly grasp new
+                        concepts allows me to stay at the forefront of technological advancements. Understanding that
+                        "Time is money," I focus my energy on meaningful pursuits that drive progress and innovation.
+                        <br><br>
+
+                        🤝
+                        I deeply value an environment where individuals can learn and grow together. I believe that
+                        collaboration and mutual support are key to achieving great things. By fostering a culture of
+                        continuous improvement, I aim to contribute positively to any team or project.
+                        <br><br>
+                        💎
+                        I am excited about the practical implementation of my knowledge and skills. Guided by the
+                        mantra, "Whatever you are, be a good one," I strive for excellence in all my endeavors. Whether
+                        developing cutting-edge solutions or refining existing systems, my goal is to make a significant
+                        impact.
+                        <br><br>
+                        ---
+
+                        Feel free to explore my portfolio to see the projects I've worked on and the skills I've honed.
+                        Let's connect and see how we can innovate together!
+                    </p>
+
+                    <!----- About's Subtitle ------>
+                    <div class="tab-titles">
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <!--- For Skills--->
+
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>Python</span><br></li>
+                            <li><span>Java</span><br></li>
+                            <li><span>SQL</span><br></li>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>Problem Solving</span><br></li>
+                        </ul>
+                    </div>
+
+                    <!----- For Education ----->
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>B.Tech (Bachelor of Technology) From</span><br>Pace Institute of Technology and Sciences2022-2025<br> CGPA : 7.84</li>
+                            <li><span>HSC (Higher Secondary Certificate) From</span><br>Umamaheswara Junior College 2019-2021<br> Percentage : 76.8%</li>
+                            <li><span>SSC (Secondary School Certificate) From</span><br>Sri Chaitanya Techno School 2018-2019<br> CGPA : 9.7% </li>
+                        </ul>
+                    </div>
+
+                    <!------- For Experience ---->
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!------- Projects ------->
+
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="slider-wrapper-page3">
+                <button id="prev-slide" class="slide-button material-symbols-rounded" onclick="goPrev()">
+                    chevron_left
+                </button>
+                <div class="work-list page3">
+
+                    <div class="work">
+
+                        <!-- Project 1 -->
+                        <img src="Images/project1.jpg" alt="Project 1">
+
+                        <div class="layer">
+                            <h3 style="color:#fff">Temperature Monitoring</h3>
+                            <p style="color:#fff">It focuses on the real time monitoring, analysis and visualization of temperature data using IoT enabled sensors and
+a web based dashboard.</p>
+                            <a href="https://project-beta-khaki.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 2 -->
+                    <div class="work">
+                        <img src="Images/project2.jpg" alt="Project 2">
+
+                        <div class="layer">
+                            <h3 style="color:#fff">Interview Assistant</h3>
+                            <p style="color:#fff">Developing a web based Interview Assistant application to help users practice and prepare for job interviews through an
+interactive and user-friendly interface.</p>
+                            <a href="https://interview-assistant-topaz.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 3 -->
+                    <div class="work">
+                        <img src="Images/project3.jpg" alt="Project 3">
+                        <div class="layer">
+                            <h3 style="color:#fff">Faculty Performance Evaluator</h3>
+                            <p style="color:#fff">Faculty Performance Evaluator is a live project aimed at creating
+                                a comprehensive appraisal system for teaching faculty, focusing on performance-based
+                                evaluations. This system will streamline the assessment process, providing clear
+                                metrics and feedback to enhance teaching effectiveness and faculty development.</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded" onclick="goNext()">
+                    chevron_right
+                </button>
+
+            </div>
+        </div>
+        <!--See More  -->
+        <a href="" class="btn"><i class="fa-solid fa-eye"></i> See More</a>
+    </div>
+
+
+    <!------- Certificates ------->
+
+    <div id="Certificates">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="slider-wrapper-page5">
+                <button id="prev-slide" class="slide-button material-symbols-rounded" onclick="goPrev()">
+                    chevron_left
+                </button>
+                <div class="work-list page5">
+
+                    <!-- Certificates -->
+
+                    <div class="work slide">
+                        <img src="Images/python.jpeg" alt="Python Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Python Certificate</h3>
+                            <p style="color:#fff">HackerRank</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work slide">
+                        <img src="Images/java.jpeg" alt="Java Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Java Certificate </h3>
+                            <p style="color:#fff">Simplilearn</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work slide">
+                        <img src="Images/aws cloud.jpeg" alt="AWS Cloud Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">AWS Cloud Certificate</h3>
+                            <p style="color:#fff">EduSkills</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work slide">
+                        <img src="Images/web development.jpeg" alt="Web Development">
+                        <div class="layer">
+                            <h3 style="color:#fff">Web Development Certificate</h3>
+                            <p style="color:#fff">Infosys Springboard</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work slide">
+                        <img src="infrastructure.jpeg" alt="Infrastructure AI Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Infrastructure AI Certificate </h3>
+                            <p style="color:#fff">Oracle</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work slide">
+                        <img src="Images/dsa.jpeg" alt="DSA Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">DSA Certificate</h3>
+                            <p style="color:#fff">LinkedIn Learning</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work slide">
+                        <img src="Images/data analyst.jpeg" alt="Data Analyst Cerificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Data Analyst Certificate</h3>
+                            <p style="color:#fff">One Roadmap</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <button id="next-slide" class="slide-button material-symbols-rounded" onclick="goNext()">
+                    chevron_right
+                </button>
+
+            </div>
+            <!-- Fullscreen Img Preview Box -->
+            <div class="preview-box">
+                <div class="details">
+                    <span class="icon fas fa-times"></span>
+                </div>
+                <div class="image-box"><img src="" alt=""></div>
+            </div>
+            <div class="shadow"></div>
+
+            <!-- See More  -->
+            <a href="" class="btn"> <i class="fa-solid fa-eye"></i> See More</a>
+        </div>
+    </div>
+
+    <!------- Achievements ------->
+
+    <div id="Achievements">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <div class="slider-wrapper-page5">
+                <button id="prev-slide" class="slide-button material-symbols-rounded" onclick="goPrev()">
+                    chevron_left
+                </button>
+                <div class="work-list page5">
+
+                    <!-- Achievements -->
+
+                    <div class="work slide">
+                        <img src="Images/young professional.jpeg" alt="Young Professional Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Young Professional Certificate</h3>
+                            <p style="color:#fff">TCS ION</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work slide">
+                        <img src="Images/young turks.jpeg" alt="Young Turks Certificate">
+                        <div class="layer">
+                            <h3 style="color:#fff">Young Turks Certificate</h3>
+                            <p style="color:#fff">Naukri Campus</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                
+            </div>
+
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+            </button>
+
+        </div>
+    </div>
+
+    <!------- Contact ------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><i class="fa-solid fa-user"></i> Contact Me </h1>
+                    <br>
+                    <p> <i class="fa-solid fa-paper-plane"></i>Email :- durgasaikoushikmatta@gmail.com</p>
+                    <br>
+                    <p><i class="fa-solid fa-phone"></i>Contact No:- 9676173614</p>
+
+                    <!-- Social Media Icons  -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/durga-sai-koushik-matta-753883281/" target="_blank"><i class="fa-solid fa-bug"></i></a>
+                        <a href="https://github.com/koushik383/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <!-- Resume -->
+                    <a href="Koushik_Resume.jpeg" download class="btn btn2"><i class="fa-solid fa-download"></i>
+                        Download CV</a>
+                </div>
+
+                <!-- feedback Form -->
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name " required>
+                        <input type="email" name="Email" placeholder="Enter Your Email" required>
+
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-solid fa-floppy-disk"></i>
+                            Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------- copyright ------->
+    <footer>
+        <div class="copyright">
+            <p>copyright © <i class="fa-solidfa-heart"><i>Durga Sai Koushik Matta</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
